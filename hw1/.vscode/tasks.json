@@ -6,7 +6,7 @@
         {
             "label": "build",
             "type": "shell",
-            "command": "cd .. && make clean && make && ./main.exe && cat output.txt"
+            "command": "make clean && make && make run && cat output.txt && make clean"
         }
     ]
 }
