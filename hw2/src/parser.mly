@@ -7,8 +7,10 @@
 %token EOF
 %token COMMA
 %token INTO
+%token PROOF
 %left COMMA
 %nonassoc INTO
+%nonassoc PROOF
 %right IMPL
 %left OR
 %left AND
@@ -28,3 +30,5 @@ expr:
         |expr COMMA expr   { Binop (Comma, $1, $3) }
         |expr INTO expr    { Binop (Into, $1, $3) }
         |INTO expr         { Binop (Into, None, $2) }
+        |expr PROOF expr   { Binop (Proof, $1, $3) }
+        |PROOF expr        { Binop (Proof, None, $2) }

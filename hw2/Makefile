@@ -1,6 +1,7 @@
 .PHONY: pack all run clean
 GENERATED=src/parser.mli src/parser.ml src/lexer.ml
-OCAMLC=ocamlc # ocamlopt for speed
+#OCAMLC=ocamlc # ocamlopt for speed
+OCAMLC=ocamlbuild -use-ocamlfind main.d.byte
 PACKAGE=hw0.zip
 
 ifeq ($(OS),Windows_NT)

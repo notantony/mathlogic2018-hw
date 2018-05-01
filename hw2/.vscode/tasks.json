@@ -6,7 +6,8 @@
         {
             "label": "build",
             "type": "shell",
-            "command": "make clean && make && make run && cat output.txt && make clean"
+            "command": "make clean && make && make run && cat output.txt",
+            "problemMatcher": "$ocamlc"
         }
     ]
 }

@@ -1,4 +1,4 @@
-type op = Conj | Disj | Impl | Into | Comma;;
+type op = Conj | Disj | Impl | Into | Comma | Proof;;
 
 type tree = 
 	| Binop of op * tree * tree

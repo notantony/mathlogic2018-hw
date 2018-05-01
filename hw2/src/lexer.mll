@@ -14,6 +14,7 @@ rule main = parse
         | ")"           { CLOSE }
         | "|-"          { INTO }
         | ","           { COMMA }
+        | "|="          { PROOF }
         | eof           { EOF }
 
 
