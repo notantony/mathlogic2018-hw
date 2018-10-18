@@ -1,9 +1,9 @@
-#OCAMLC=ocamlc -g
-OCAMLC=ocamlc # ocamlopt for speed
+OCAMLC=ocamlc -g
 #OCAMLC=ocamlbuild -use-ocamlfind main.exe
+#OCAMLC=ocamlc # ocamlopt for speed
 .PHONY: pack all run clean
 GENERATED=src/parser.mli src/parser.ml src/lexer.ml
-PACKAGE=hw2.zip
+PACKAGE=hw3.zip
 
 ifeq ($(OS),Windows_NT)
 	DEL=del /f
