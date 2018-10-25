@@ -1,4 +1,5 @@
 OCAMLC=ocamlc -g
+#OCAMLC=ocamlopt
 #OCAMLC=ocamlbuild -use-ocamlfind main.exe
 #OCAMLC=ocamlc # ocamlopt for speed
 .PHONY: pack all run clean

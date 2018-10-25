@@ -12,8 +12,8 @@
             "program": "${workspaceRoot}/../main.exe",
             "console": "internalConsole",
             "stopOnEntry": false,
-            "preLaunchTask": "build",
-            "postDebugTask": "clean"
+            //"preLaunchTask": "build",
+            //"postDebugTask": "clean"
         }
     ]
 }
